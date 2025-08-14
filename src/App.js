@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Terminal, Code, Bot, Instagram, Monitor, Cpu } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Terminal, Code, Bot, Instagram, Monitor, Cpu, Twitter } from 'lucide-react';
 import avatarImage from './avatar.jpeg';
 
 const Portfolio = () => {
@@ -492,6 +492,18 @@ const Portfolio = () => {
               </div>
             </a>
             
+            <a href="https://x.com/kernel_glitch" target="_blank" rel="noopener noreferrer" className="group p-6 bg-white/5 backdrop-blur-2xl rounded-2xl border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 shadow-2xl">
+              <div className="flex items-center">
+                <div className="p-3 bg-gradient-to-r from-gray-500/20 to-slate-500/20 rounded-lg mr-4 group-hover:from-gray-500/30 group-hover:to-slate-500/30 transition-all duration-300">
+                  <Twitter className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-1 text-white group-hover:text-gray-200 transition-colors duration-300">X</h3>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">@kernel_glitch</p>
+                </div>
+              </div>
+            </a>
+            
             <a href="tel:+919179687775" className="group p-6 bg-white/5 backdrop-blur-2xl rounded-2xl border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 hover:scale-105 shadow-2xl">
               <div className="flex items-center">
                 <div className="p-3 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-lg mr-4 group-hover:from-green-500/30 group-hover:to-emerald-500/30 transition-all duration-300">
@@ -534,6 +546,9 @@ const Portfolio = () => {
             </a>
             <a href="https://linkedin.com/in/glitchxx0" className="text-gray-500 hover:text-white transition-colors duration-300">
               <Linkedin className="w-5 h-5" />
+            </a>
+            <a href="https://x.com/kernel_glitch" className="text-gray-500 hover:text-white transition-colors duration-300">
+              <Twitter className="w-5 h-5" />
             </a>
             <a href="mailto:deepakkrsoni16@gmail.com" className="text-gray-500 hover:text-white transition-colors duration-300">
               <Mail className="w-5 h-5" />
