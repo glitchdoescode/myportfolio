@@ -1,0 +1,234 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+% \usepackage[empty]{fullpage} % REMOVED - This is often the cause of unexpected page breaks
+\usepackage[margin=1in]{geometry} % ADDED - A more reliable way to control margins
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{10pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Deepak Kumar Soni} \\ \vspace{1pt}
+    \small +91 9179687775 $|$ \href{mailto:dks91@case.edu}{\underline{dks91@case.edu}} $|$
+    \href{https://glitchdoescode.github.io/myportfolio/}{\underline{https://glitchdoescode.github.io/myportfolio/}}
+\end{center}
+
+%-----------CAREER OBJECTIVE-----------
+\section{Career Objective}
+    \resumeSubHeadingListStart
+        \resumeItem{An innovative AI Engineer and Systems Architect with proven experience in leading projects from ideation to deployment. Eager to leverage expertise in multi-agent systems, product architecture, and client-facing roles to build scalable, intelligent solutions in a dynamic and growth-oriented environment.}
+    \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C, C++, Bash/Shell Scripting, JavaScript, Rust} \\
+     \textbf{AI/ML \& GenAI}{: Multi-Agent Systems, LangGraph, RAG, NLP, LLMs, Model Fine-tuning, Prompt Engineering, TensorFlow, PyTorch, LangChain, OpenCV} \\
+     \textbf{Backend \& Frameworks}{: FastAPI, Flask, Node.js, Django, Streamlit} \\
+     \textbf{Cloud, DevOps \& Infra}{: GCP, AWS, Docker, Kubernetes, CI/CD, Terraform, Nginx, gVisor, Celery, HashiCorp Vault} \\
+     \textbf{Databases \& Vector Stores}{: PostgreSQL, MongoDB, Redis, Elasticsearch, Supabase, Pinecone, ChromaDB} \\
+     \textbf{Systems \& Tools}{: Linux/Unix, Raspberry Pi, Socket Programming, Network Protocols, Git, Wireshark, Neovim}
+    }}
+ \end{itemize}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SLOTHPAYS \href{https://powersmy.biz/}{\underline{(powersmy.biz)}}}{Remote, Bengaluru, Karnataka, India}
+      {Founding Engineer}{Oct 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected and managed the development of \textbf{SmartPlaybook OS}, a multi-agent decision-making platform using LangGraph, deterministic analytics, and human-in-the-loop governance to automate business workflows.}
+        \resumeItem{Designed the architecture for \textbf{Instant-Filtro}, an AI application factory that transforms natural language requirements into fully deployed applications, significantly reducing development time.}
+        \resumeItem{Led the full-cycle technical recruitment process; personally screened over 300 candidates and hired skilled developers to expand the core engineering team.}
+        \resumeItem{Acted as a key technical point of contact in client and advisory meetings, confidently communicating complex architectural concepts and project roadmaps.}
+        \resumeItem{Drove the end-to-end development of an AI-driven interview scheduling automation system, reducing meeting coordination time by 85-90\% \href{https://drive.google.com/file/d/11qH0BIFL43zMeJg_H0m-cZipJ6jvhl_G/view}{\textbf{(Demo Link)}}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SHUNYA.EK}{Remote, Goa, India}
+      {Software Development Engineer Intern \textbf{\href{https://drive.google.com/file/d/1F9niCTFMyG4IYy_Mg0WNfUFjl01VvuUS/view?usp=sharing}{(Certificate Link)}}}{May 2024 -- Sept 2024}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the creation of a command-line workflow automation tool using Bash, Python, and JavaScript, eliminating 85-95\% of manual tasks and boosting engineering team productivity.}
+        \resumeItem{Deployed a Raspberry Pi-based web server using Nginx and Ngrok to enable secure remote SSH tunneling, significantly improving system accessibility and reliability.}
+        \resumeItem{Designed and implemented an automated disk imaging utility in Bash for USB drive flashing with custom configurations, increasing deployment speed and reducing error rates \textbf{\href{https://github.com/glitchdoescode/imager}{(Github Link)}}.}
+        \resumeItem{Pioneered a real-time video segmentation and motion tracking proof-of-concept using Python and Mediapipa, enabling advanced analytics and visualizations \textbf{\href{https://drive.google.com/drive/folders/1eyVZ6idPk0TW2u5xbQdPR1KRfB3VYy-O?usp=sharing}{(Demo Link)}}.}
+        \resumeItem{Fine-tuned GPT-3.5-turbo with JSONL datasets and OpenAI APIs, elevating the platform's conversational capabilities for specialized NLP tasks.}
+        \resumeItem{Implemented robust CI/CD pipelines using Git and Terraform for automated model deployments, reducing downtime and accelerating updates.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------VOLUNTEER EXPERIENCE-----------
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Red Hen Labs}{Distributed / Online}
+      {Volunteer Researcher/Contributor}{February 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Co-authored and submitted a research paper, \textbf{\href{https://drive.google.com/file/d/12EovyR6VogkiF08TVnS8uvfzkz10k3Ry/view?usp=sharing}{"Frame Blending Is Essential For Advancing Creative Generative AI,"}} to the NeurIPS 2025 Position Paper Track in collaboration with Prof. Mark Turner.}
+        \resumeItem{Developed \textbf{TalentScout}, a proof-of-concept multi-agent system using LangGraph and RAG to intelligently match candidates with internship opportunities based on deep contextual understanding.}
+        \resumeItem{Initiated and implemented architectural improvements to the Frame Blender framework, enhancing multi-modal data processing performance and scalability for a distributed research team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {IIT Hyderabad}{Hyderabad, India}
+      {Volunteer Researcher/Contributor}{Jan 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Prototyping a warzone-focused object detection pipeline with Detectron2 and a ConvNeXt backbone, targeting challenges such as camouflage, partial occlusion, and changing environmental conditions \textbf{\href{https://colab.research.google.com/drive/1oCPqvHvaEQuJhBSTo_yHAJ9YCmgxzlvC?usp=sharing}{(Colab Link)}}.}
+        \resumeItem{Experimenting with advanced data augmentation (dust, smoke, low-light) to improve model generalization in early-stage R\&D, currently limited by a small dataset of a few hundred images.}
+        \resumeItem{Investigating methods for scaling to thousands of images and optimizing real-time inference performance, contributing to ongoing research and development efforts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Real-Time Sign Language Detection} $|$ \emph{Python, TensorFlow, OpenCV, Mediapipa}}{\href{https://github.com/glitchxxx0/Real-time-sign-language-detection-Complex-gesture-navigation}{GitHub}}
+          \resumeItemListStart
+            \resumeItem{Spearheaded the design and implementation of a real-time sign language recognition system utilizing TensorFlow and OpenCV, achieving 95\% accuracy in complex gesture detection. Integrated Mediapipa for efficient hand tracking, significantly improving user experience.}
+            \resumeItem{Constructed robust data preprocessing pipelines to augment training data, increasing model accuracy and reducing false positives.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{TCP Client-Server Implementation} $|$ \emph{C, Socket Programming}}{\href{https://github.com/glitchxxx0/Networking}{GitHub}}
+          \resumeItemListStart
+            \resumeItem{Orchestrated the design and construction of a robust TCP client-server model in C based on Beej's Guide to Network Programming, ensuring stable data transmission and fault tolerance.}
+            \resumeItem{Optimized network protocols to enhance data throughput and minimize latency, aligning with demanding high-frequency requirements.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{9-Axis Spatial Orientation Tracker} $|$ \emph{Python, WebSocket, ADB, Sensor Fusion}}{\href{https://github.com/glitchdoescode/9-axis-tracker}{Github}}
+          \resumeItemListStart
+            \resumeItem{Built a real-time phone orientation tracking system leveraging IMU sensors (accelerometer, gyroscope) and magnetometer data to support advanced spatial analytics.}
+            \resumeItem{Integrated Android Debug Bridge (ADB) with WebSocket communication for live data streaming and near-real-time visualization.}
+            \resumeItem{Implemented sensor fusion techniques to accurately interpret 3D spatial orientation, enhancing reliability and performance.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeItem{CCNA (Cisco Certified Network Associate) -- Mastered fundamental networking concepts including IP connectivity, security, and automation. \href{https://drive.google.com/drive/folders/1CZHAecI9JuE2XrJn2QT4nnr_pTn-MmLK?usp=sharing}{\textbf{(Certificate Link)}}}
+        \resumeItem{Python Essentials -- Covered foundational Python programming from basic syntax to object-oriented principles, as evidenced by Python Essentials 1 and 2 course completions. \href{https://drive.google.com/drive/folders/1rkyVeLwu4ZdurV4lRsdPG8bBoUcFw96k?usp=sharing}{\textbf{(Certificate Link)}}}
+        \resumeItem{Linux Essentials -- Acquired core skills in Linux command-line operations, system administration, and scripting. \href{https://drive.google.com/file/d/1vr_SV1MJ6BmSnzIiTPfoYmEkAcX_DHGz/view?usp=sharing}{\textbf{(Certificate Link)}}}
+        \resumeItem{Introduction to Cybersecurity -- Gained foundational knowledge of cybersecurity principles, common threats, and defense strategies. \href{https://drive.google.com/file/d/1WWbvRDZ6xkJSdu_elIz-kkAIwQKGfiey/view?usp=sharing}{\textbf{(Certificate Link)}}}
+    \resumeSubHeadingListEnd
+    
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+        \resumeItem{Co-authored and submitted a research paper to the \textbf{NeurIPS 2025} Position Paper Track, collaborating with renowned cognitive scientist Prof. Mark Turner. \href{https://drive.google.com/file/d/12EovyR6VogkiF08TVnS8uvfzkz10k3Ry/view?usp=sharing}{\textbf{(Link)}}}
+        \resumeItem{Maintained consistent development activity with \textbf{935+ GitHub contributions} in the last year, demonstrating sustained commitment to software development and open-source contributions. \href{https://github.com/glitchdoescode}{\textbf{(Profile Link)}}}
+        \resumeItem{Selected for the Smart India Hackathon (SIH) 2024, contributing to the development of a Non-Invasive Intraocular Pressure (IOP) Measurement Device.}
+        \resumeItem{Participated in the LLM Agents MOOC Hackathon, hosted by UC Berkeley RDI, contributing to the development of 'ScheduleBot', an AI-driven scheduling agent application \href{https://devpost.com/software/schedulebot-vax4zl?ref_content=my-projects-tab&ref_feature=my_projects}{\textbf{(Project Link)}}.}
+        \resumeItem{Secured a position among the Top 10 teams at The Great India Hackathon - Jabalpur, with a project focused on innovative skin disease detection and prediction.}
+        \resumeItem{Advanced to the second round of HackOn with Amazon - Season 3, showcasing strong proficiency in Data Structures and Algorithms.}
+    \resumeSubHeadingListEnd
+
+\end{document}
