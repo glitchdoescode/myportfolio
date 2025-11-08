@@ -5,27 +5,26 @@ import avatarImage from './avatar.jpeg';
 const Portfolio = () => {
   const workExperience = [
     {
-      company: "SLOTHPAYS",
+      company: "FIKA ARTIFICIAL INTELLIGENCE RESEARCH",
       role: "Founding Engineer",
       period: "Oct 2024 - Present",
-      location: "Remote, Bengaluru, Karnataka, India",
+      location: "Bengaluru, Karnataka, India",
       website: "https://powersmy.biz/",
       details: [
         {
-          description: "Architected and managed the development of SmartPlaybook OS, a multi-agent decision-making platform using LangGraph, deterministic analytics, and human-in-the-loop governance to automate business workflows."
+          description: "Contributed 676+ commits across the organization in 2025, architecting a serverless, event-driven workflow automation platform leveraging Google Cloud Pub/Sub, FastAPI microservices, and LangGraph for multi-agent orchestration, enabling PRD-to-chatbot deployment in under 10 minutes."
         },
         {
-          description: "Designed the architecture for Instant-Filtro, an AI application factory that transforms natural language requirements into fully deployed applications, significantly reducing development time."
+          description: "Designed and implemented multi-tenant architecture with PostgreSQL Row-Level Security, Qdrant vector database namespace isolation, and Redis-based configuration hot-reload achieving zero-downtime updates."
         },
         {
-          description: "Led the full-cycle technical recruitment process; personally screened over 300 candidates and hired skilled developers to expand the core engineering team."
+          description: "Built AI-powered conversational agents using Google Gemini with LangChain for natural language configuration updates, implementing streaming SSE responses and comprehensive test coverage (71% overall, 92% on core business logic)."
+        },
+        {
+          description: "Developed production-grade database schemas using Pydantic V2 validation, Alembic migrations with RLS policies, and full-text search indexes, ensuring enterprise-grade data integrity and security."
         },
         {
           description: "Acted as a key technical point of contact in client and advisory meetings, confidently communicating complex architectural concepts and project roadmaps."
-        },
-        {
-          description: "Drove the end-to-end development of an AI-driven interview scheduling automation system, reducing meeting coordination time by 85-90%.",
-          demoLink: "https://drive.google.com/file/d/11qH0BIFL43zMeJg_H0m-cZipJ6jvhl_G/view"
         }
       ]
     },
@@ -101,34 +100,30 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "Krishna Diagnostics AI Assistant",
+      description: "Designed AI business assistant using LangGraph 2-node pattern for multi-channel integration (WhatsApp, Instagram, Web, CRMs). Implemented 6 specialized workflows with Razorpay payment integration and MCP protocol. Built with enterprise-grade patterns: Langfuse observability, structured JSON logging, circuit breaker resilience, PostgreSQL state management, and Redis caching for production deployment.",
+      tech: ["LangGraph", "FastAPI", "PostgreSQL", "Gemini"],
+      link: "https://github.com/pupiltree/krsna-d",
+      demoLink: "http://104.197.233.188:8000/static/demo-chat.html"
+    },
+    {
+      title: "Private-AI Wellness Content Platform",
+      description: "Built RAG pipeline with ChromaDB vector database and Gemini embeddings for IP-protected wellness content generation with semantic search capabilities. Integrated Google Drive API for automated document ingestion with chunked processing and persistent storage. Implemented production-grade security with environment-based credential management, Pydantic V2 validation, and Alembic database migrations.",
+      tech: ["FastAPI", "LangChain", "ChromaDB", "Gemini"],
+      link: "https://github.com/glitchdoescode/private-ai",
+      demoLink: "http://104.197.233.188:8002/"
+    },
+    {
+      title: "Cloud-Native E-Commerce Platform (Microservices)",
+      description: "Deployed 11-microservice e-commerce application on Google Kubernetes Engine with Grafana/Prometheus monitoring for metrics and Loki for centralized logging. Implemented PostgreSQL persistence layer for checkout service, modifying order processing to store transaction data with proper schema design and gRPC integration. Configured traffic simulation with Locust and visualized application/Kubernetes metrics through Grafana dashboards.",
+      tech: ["Kubernetes", "GKE", "Grafana", "Go"],
+      link: "https://github.com/glitchdoescode/microservices-demo"
+    },
+    {
       title: "Real-Time Sign Language Detection",
       description: "Spearheaded the design and implementation of a real-time sign language recognition system utilizing TensorFlow and OpenCV, achieving 95% accuracy in complex gesture detection. Integrated Mediapipe for efficient hand tracking and constructed robust data preprocessing pipelines to augment training data.",
       tech: ["Python", "TensorFlow", "OpenCV", "Mediapipe"],
       link: "https://github.com/glitchxxx0/Real-time-sign-language-detection-Complex-gesture-navigation"
-    },
-    {
-      title: "TCP Client-Server Implementation",
-      description: "Orchestrated the design and construction of a robust TCP client-server model in C based on Beej's Guide to Network Programming, ensuring stable data transmission and fault tolerance. Optimized network protocols to enhance data throughput and minimize latency.",
-      tech: ["C", "Socket Programming"],
-      link: "https://github.com/glitchxxx0/Networking"
-    },
-    {
-      title: "9-Axis Spatial Orientation Tracker",
-      description: "Built a real-time phone orientation tracking system leveraging IMU sensors (accelerometer, gyroscope) and magnetometer data. Integrated Android Debug Bridge (ADB) with WebSocket communication for live data streaming and implemented sensor fusion techniques for accurate 3D spatial orientation.",
-      tech: ["Python", "WebSocket", "ADB", "Sensor Fusion"],
-      link: "https://github.com/glitchdoescode/9-axis-tracker"
-    },
-    {
-      title: "Frame Blender Framework",
-      description: "Collaborated with renowned cognitive scientist Prof. Mark Turner on advancing the Frame Blender framework for creative generative AI. Contributed to architectural improvements enhancing multi-modal data processing performance and scalability for distributed research teams.",
-      tech: ["AI/ML", "Multi-modal Processing", "Research"],
-      link: "https://drive.google.com/file/d/12EovyR6VogkiF08TVnS8uvfzkz10k3Ry/view?usp=sharing"
-    },
-    {
-      title: "TalentScout Multi-Agent System",
-      description: "Developed a proof-of-concept multi-agent system using LangGraph and RAG to intelligently match candidates with internship opportunities based on deep contextual understanding. Built for Red Hen Labs research initiative.",
-      tech: ["LangGraph", "RAG", "Multi-Agent Systems", "NLP"],
-      link: "#"
     }
   ];
 
@@ -139,22 +134,22 @@ const Portfolio = () => {
       link: "https://drive.google.com/file/d/12EovyR6VogkiF08TVnS8uvfzkz10k3Ry/view?usp=sharing"
     },
     {
-      title: "935+ GitHub Contributions",
-      description: "Maintained consistent development activity with 935+ GitHub contributions in the last year, demonstrating sustained commitment to open-source development",
+      title: "4th Place - AI-for-Good Hackathon",
+      description: "Secured 4th place developing Rakht Setu - an agentic AI blood donation platform using LangGraph multi-agent architecture, reducing donor-patient matching time by 40%"
+    },
+    {
+      title: "1,574+ GitHub Contributions",
+      description: "Maintained 1,574+ GitHub contributions in the last year, demonstrating sustained commitment to software development",
       link: "https://github.com/glitchdoescode"
     },
     {
-      title: "Smart India Hackathon 2024",
-      description: "Selected for SIH 2024, contributing to the development of a Non-Invasive Intraocular Pressure (IOP) Measurement Device"
+      title: "Smart India Hackathon 2024 & Top 10 Great India Hackathon",
+      description: "Selected for Smart India Hackathon (SIH) 2024 and Top 10 at The Great India Hackathon - Jabalpur with innovative healthcare projects"
     },
     {
-      title: "LLM Agents MOOC Hackathon",
-      description: "Participated in UC Berkeley RDI hackathon, developing 'ScheduleBot' - an AI-driven scheduling agent application",
+      title: "UC Berkeley RDI's LLM Agents MOOC Hackathon",
+      description: "Participated in UC Berkeley RDI's LLM Agents MOOC Hackathon, developing 'ScheduleBot' AI scheduling agent",
       link: "https://devpost.com/software/schedulebot-vax4zl?ref_content=my-projects-tab&ref_feature=my_projects"
-    },
-    {
-      title: "Top 10 - Great India Hackathon",
-      description: "Secured position among Top 10 teams at The Great India Hackathon - Jabalpur with skin disease detection and prediction project"
     }
   ];
 
@@ -182,12 +177,12 @@ const Portfolio = () => {
   ];
 
   const skills = [
-    { category: "Languages", items: "Python, C, C++, Bash/Shell Scripting, JavaScript, Rust", icon: <Code className="w-5 h-5" /> },
-    { category: "AI/ML & GenAI", items: "Multi-Agent Systems, LangGraph, RAG, NLP, LLMs, Model Fine-tuning, Prompt Engineering, TensorFlow, PyTorch, LangChain, OpenCV", icon: <Bot className="w-5 h-5" /> },
-    { category: "Backend & Frameworks", items: "FastAPI, Flask, Node.js, Django, Streamlit", icon: <Code className="w-5 h-5" /> },
-    { category: "Cloud, DevOps & Infra", items: "GCP, AWS, Docker, Kubernetes, CI/CD, Terraform, Nginx, gVisor, Celery, HashiCorp Vault", icon: <Monitor className="w-5 h-5" /> },
-    { category: "Databases & Vector Stores", items: "PostgreSQL, MongoDB, Redis, Elasticsearch, Supabase, Pinecone, ChromaDB", icon: <Cpu className="w-5 h-5" /> },
-    { category: "Systems & Tools", items: "Linux/Unix, Arch Linux, Raspberry Pi, Socket Programming, Network Protocols, Git, Wireshark, Neovim", icon: <Terminal className="w-5 h-5" /> }
+    { category: "Languages", items: "Python (Primary), JavaScript, Bash/Shell Scripting, C/C++", icon: <Code className="w-5 h-5" /> },
+    { category: "AI/ML & GenAI", items: "Multi-Agent Systems, LangGraph, RAG, NLP, LLMs, Model Fine-tuning, Prompt Engineering, LangChain, TensorFlow, PyTorch, OpenCV", icon: <Bot className="w-5 h-5" /> },
+    { category: "Backend & Frameworks", items: "FastAPI, Flask, Streamlit, Node.js", icon: <Code className="w-5 h-5" /> },
+    { category: "Cloud & DevOps", items: "GCP (GKE, Pub/Sub, Cloud Run, Secret Manager), Kubernetes, Docker, CI/CD (GitHub Actions), Terraform, Nginx", icon: <Monitor className="w-5 h-5" /> },
+    { category: "Databases & Vector Stores", items: "PostgreSQL (RLS), Redis, Supabase, ChromaDB, FAISS, Qdrant", icon: <Cpu className="w-5 h-5" /> },
+    { category: "Tools & Systems", items: "Git, Linux/Unix, Docker Compose, Grafana, Prometheus, Loki, gRPC, MCP Protocol, Alembic, Pydantic", icon: <Terminal className="w-5 h-5" /> }
   ];
 
   return (
